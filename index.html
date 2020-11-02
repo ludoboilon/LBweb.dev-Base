@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LBweb.dev | UX design and web development</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="fullContainer">
+			<!-- Navbar -->
+			<nav id="navtop">
+				<div id="brand">
+					<h1><a href="index.html">LBweb.dev</a></h1>
+					<hr id="underBrand" />
+				</div>
+				<div id="menuBtn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+
+			<!-- Sidebar -->
+			<div id="sidebar" class="menuClosed menuOpened">
+				<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+					<hr class="divider bord-red" />
+					<li><a href="index.html">Portfolio</a></li>
+					<hr class="divider" />
+					<li><a href="index.html">Contact</a></li>
+				</ul>
+
+				<div id="socials">
+					<a href="https://github.com/ludoboilon" target="_blank"
+						><img src="./assets/icons/Github--dark.png" alt=""
+					/></a>
+					<a href="https://www.facebook.com/LBwebdev.fr" target="_blank"
+						><img src="./assets/icons/Facebook--dark.png" alt=""
+					/></a>
+					<a href="https://twitter.com/ludoboilon" target="_blank"
+						><img src="./assets/icons/Twitter--dark.png" alt=""
+					/></a>
+				</div>
+			</div>
+
+			<!-- Main content -->
+			<div id="mainContent" class="mcLong mcShort">
+				<header class="greetings">
+					<h2 class="hello">Hi, I'm <span>Ludo</span> !</h2>
+					<hr class="bord-red bs-red" />
+					<h2 class="job">web <span class="red">designer</span></h2>
+				</header>
+			</div>
+
+			<!-- Color chart -->
+			<div id="colorChart" class="ccLong ccShort">
+				<span class="bg-red"></span>
+				<span class="bg-orange"></span>
+				<span class="bg-yellow"></span>
+				<span class="bg-green"></span>
+				<span class="bg-cyan"></span>
+				<span class="bg-blue"></span>
+				<span class="bg-purple"></span>
+				<span class="bg-pink"></span>
+				<span id="activeColor" class="bg-red bs-red"></span>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

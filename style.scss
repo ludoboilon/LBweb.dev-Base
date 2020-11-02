@@ -1,0 +1,100 @@
+@import "./partials/reset", "./partials/variables", "./partials/navigation";
+
+body {
+	background: $grey;
+	background-image: url(./assets/background.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+}
+
+#mainContent {
+	position: fixed;
+	top: 60px;
+	left: 0;
+	bottom: 112px;
+	overflow-y: scroll;
+	padding: 20px $pad;
+	transition: right 0.2s ease-in-out;
+	cursor: default;
+}
+
+#mainContent::-webkit-scrollbar {
+	display: none;
+}
+
+.mcLong {
+	right: 0;
+}
+
+.mcShort {
+	right: 300px;
+}
+
+.greetings {
+	position: absolute;
+	top: 40%;
+	left: $pad;
+	width: 220px;
+	font-size: 24px;
+
+	.hello {
+		color: #fff;
+
+		span {
+			font-weight: 700;
+		}
+	}
+
+	hr {
+		margin: 20px auto;
+	}
+
+	.job {
+		float: right;
+		text-transform: uppercase;
+		word-spacing: 3px;
+		letter-spacing: 1px;
+
+		span {
+			font-weight: 700;
+			text-shadow: 0 0 10px rgba($red, 0.5);
+		}
+	}
+}
+
+/* Color Chart */
+
+#colorChart {
+	position: fixed;
+	bottom: 70px;
+	transform: translateY(-50%);
+	height: 14px;
+	background: #000;
+	display: flex;
+	transition: width 0.2s ease-in-out;
+	z-index: 99;
+
+	span {
+		width: 12.5%;
+	}
+}
+
+.ccLong {
+	width: 100%;
+}
+
+.ccShort {
+	width: calc(100% - 300px);
+}
+
+#activeColor {
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	height: 20px;
+	border-radius: 2px;
+}

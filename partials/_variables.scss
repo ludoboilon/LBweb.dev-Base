@@ -1,0 +1,58 @@
+$grey: #212121;
+$red: #ff6b5b;
+$orange: #ff9f5b;
+$yellow: #ffdf5b;
+$green: #98ff80;
+$cyan: #5bffdb;
+$blue: rgb(88, 124, 240);
+$purple: #d361e2;
+$pink: #ff4975;
+
+$pad: 70px;
+
+// Backgrounds .bg-color
+.bg-red {
+	background: $red;
+}
+.bg-orange {
+	background: $orange;
+}
+.bg-yellow {
+	background: $yellow;
+}
+.bg-green {
+	background: $green;
+}
+.bg-cyan {
+	background: $cyan;
+}
+.bg-blue {
+	background: $blue;
+}
+.bg-purple {
+	background: $purple;
+}
+.bg-pink {
+	background: $pink;
+}
+
+// Box shadow .bs-color
+.bs-red {
+	box-shadow: 0 0 10px rgba($red, 0.5);
+}
+
+// Color .color
+.red {
+	color: $red;
+}
+
+// Border .bord-color
+.bord-red {
+	border: 1px solid $red;
+	box-shadow: 0 0 10px rgba($red, 0.5);
+}
+
+.bord-orange {
+	border: 1px solid $red;
+	box-shadow: 0 0 10px rgba($orange, 0.5);
+}
